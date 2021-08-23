@@ -1,0 +1,39 @@
+.btn {
+  font-size: 30px;
+  text-decoration: none;
+  transition: all 0.5s;
+  //   transition: font-size 5s, opacity 10s;
+
+  &:hover {
+    font-size: 50px;
+    text-decoration: underline;
+    opacity: 0.2;
+  }
+
+  // animation
+  @keyframes anim1 {
+      0% {
+          // transform은 위치(translate) 또는 크기(scale)를 변경할 수 있는 속성
+          opacity: 0.2;
+          transform: translate(100px, -30px);
+      }
+
+      50% {
+          opacity: 1;
+      }
+
+      100% {
+          opacity: 0.1;
+      }
+  }
+
+  #box1 {
+      animation-name: anim1;
+      animation-duration: 5s;
+      animation-fill-mode: forwards; // animation의 마지막 상태 유지
+    //   animation-fill-mode: backwards; // animation-delay가 존재할 때, delay 시간 동안 0% 상태에서 시작하도록 하는 설정
+      animation-iteration-count: 3;
+      animation-delay: 5s;
+  }
+
+}

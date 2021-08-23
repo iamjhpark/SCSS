@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../_playground/sass/test.scss"
+    ],
+    "names": [],
+    "file": "test.min.css"
+}

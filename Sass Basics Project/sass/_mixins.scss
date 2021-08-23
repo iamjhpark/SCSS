@@ -1,0 +1,11 @@
+// under score로 시작하는 파일은 컴파일이 되지 않는다.
+
+@mixin fontSizeBgColor($fontSize: 20px, $bgColor: #fff) {
+  font-size: $fontSize;
+  background-color: $bgColor;
+}
+
+@mixin linkStyle($color, $text-decoration: none) {
+  color: $color;
+  text-decoration: $text-decoration;
+}
