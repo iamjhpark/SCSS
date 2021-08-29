@@ -31,7 +31,7 @@
       animation-name: anim1;
       animation-duration: 5s;
       animation-fill-mode: forwards; // animation의 마지막 상태 유지
-    //   animation-fill-mode: backwards; // animation-delay가 존재할 때, delay 시간 동안 0% 상태에서 시작하도록 하는 설정
+    //   animation-fill-mode: backwards; // animation-delay가 존재할 때, delay 시간 동안 0% 상태에서 남아있도록 하는 설정
       animation-iteration-count: 3;
       animation-delay: 5s;
   }
