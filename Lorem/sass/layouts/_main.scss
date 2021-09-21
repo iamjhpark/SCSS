@@ -1,11 +1,19 @@
 main {
+  @include clearfix();
+
   #section-about {
+    float: left;
     background-color: #ededed;
     padding: 7rem 0 6.5rem 6rem;
+    min-height: 42rem;
     @include clearfix();
+
+    width: 66.66666%;
+
     &-words {
       width: 65%;
       float: left;
+      padding: 2rem 2rem 0 0 ;
       p {
         padding: 1.5rem 0;
         font-size: 1.4rem;
@@ -51,5 +59,46 @@ main {
   }
 
   #section-etc {
+    float: left;
+
+    width: 33.33334%;
+
+    [id^="etc-"] {
+      height: 14rem;
+    }
+
+    .etc {
+      &:nth-child(1) {
+        background-color: $color-blue-1;
+      }
+      &:nth-child(2) {
+        background-color: $color-blue-2;
+      }
+      &:nth-child(3) {
+        background-color: $color-blue-3;
+      }
+
+      .etc-icon {
+        width: 30%;
+        float: left;
+        text-align: center;
+        padding-top: 3.5rem;
+        i {
+          font-size: 6rem;
+        }
+      }
+
+      .etc-text {
+        padding-top: 1rem;
+        width: 70%;
+        float: left;
+        p {
+          margin: 0.5rem 0;
+          padding-right: 3.5rem;
+          text-align: justify;
+          font-size: 1.4rem;
+        }
+      }
+    }
   }
 }
