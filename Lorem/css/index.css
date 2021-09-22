@@ -189,6 +189,8 @@ h3 {
   content: "";
   position: absolute;
   left: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .nav-icon, .nav-icon::before, .nav-icon::after {
@@ -196,6 +198,30 @@ h3 {
   height: 2px;
   background-color: #333;
   display: inline-block;
+}
+
+.nav-button:hover .nav-icon::before {
+  top: -1rem;
+}
+
+.nav-button:hover .nav-icon::after {
+  top: 1rem;
+}
+
+.nav-checkbox:checked ~ .nav-button .nav-icon {
+  background-color: transparent;
+}
+
+.nav-checkbox:checked ~ .nav-button .nav-icon::before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 0;
+}
+
+.nav-checkbox:checked ~ .nav-button .nav-icon::after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  top: 0;
 }
 
 header {
